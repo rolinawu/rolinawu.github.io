@@ -1,10 +1,9 @@
-# Harmony Jekyll theme general configurations 
-
-# Base URL
-baseurl: 
-
 # Site live URL
-url: http://rolinawu.github.io
+# url: http://rolinawu.github.io
+
+# Localhost 
+url: http://127.0.0.1:4000  
+
 
 harmony:
   name: Comic Learning

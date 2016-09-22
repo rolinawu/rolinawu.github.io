@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://example.com/</link>
-    <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Sep 2016 13:52:24 -0400</pubDate>
-    <lastBuildDate>Mon, 05 Sep 2016 13:52:24 -0400</lastBuildDate>
+    <title></title>
+    <description>Comics + Machine Learning = Awesomeness</description>
+    <link>http://127.0.0.1:4000/</link>
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 22 Sep 2016 01:27:40 -0400</pubDate>
+    <lastBuildDate>Thu, 22 Sep 2016 01:27:40 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Lstm</title>
+        <description>&lt;p&gt;#LSTM&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Sep 2016 00:00:00 -0400</pubDate>
+        <link>http://127.0.0.1:4000/2016/09/22/LSTM/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/2016/09/22/LSTM/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Whatisrwcd</title>
@@ -16,8 +26,8 @@
 
 </description>
         <pubDate>Mon, 05 Sep 2016 00:00:00 -0400</pubDate>
-        <link>http://example.com/2016/09/05/WhatisRWCD.html</link>
-        <guid isPermaLink="true">http://example.com/2016/09/05/WhatisRWCD.html</guid>
+        <link>http://127.0.0.1:4000/2016/09/05/WhatisRWCD/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/2016/09/05/WhatisRWCD/</guid>
         
         
       </item>
