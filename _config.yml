@@ -20,9 +20,15 @@ personal_website_url: "www.rolinawu.com"
 github_username:  rolinawu
 
 # Build settings
-markdown: kramdowni
+markdown: kramdown
 theme: minima
 highlighter: rouge
 paginate: 5
 timezone: "Canada/Toronto"
 permalink: /:month-:day-:title/
+
+kramdown:
+  input: GFM
+
+gems:
+  - jekyll-paginate
