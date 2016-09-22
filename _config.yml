@@ -1,34 +1,54 @@
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Harmony Jekyll theme general configurations 
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Comic Learning
-email:
-description: "Machine Learning explained with Comics"
-baseurl: ""
-url: "http://rolinawu.github.io" # the base hostname & protocol for your site
-personal_website_url: "www.rolinawu.com"
-github_username:  rolinawu
+# Base URL
+baseurl: 
 
-# Build settings
-markdown: kramdown
-theme: minima
-highlighter: rouge
-paginate: 5
-timezone: "Canada/Toronto"
-permalink: /:month-:day-:title/
+# Site live URL
+url: http://rolinawu.github.io
 
-kramdown:
-  input: GFM
+harmony:
+  name: Comic Learning
+  description: Comics + Machine Learning = Awesomeness
 
-gems:
-  - jekyll-paginate
+  meta_description: #> #
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: Rolina Wu
+    email: 
+    url: http://www.rolinawu.com
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: #UA-xxxx-x
+
+  # Profile links, leave blank to ignore
+  social: 
+    github: rolinawu
+    twitter: 
+    facebook: 
+    gplus: 
+    dribble: 
+    pinterest: 
+  # Toggle disclaimer in footer
+  show_disclaimer: true
+
+# Conversion / Build settings 
+markdown:    kramdown
+# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+highlighter: pygments 
+
+# Permalinks
+permalink:        pretty
+
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed
