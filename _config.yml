@@ -1,8 +1,10 @@
 # Site live URL
-url: http://rolinawu.github.io
+#url: http://rolinawu.github.io
 
 # Localhost 
-#url: http://127.0.0.1:4000  
+url: http://127.0.0.1:4000  
+
+excerpt_separator: "d596aa409dbcf4bf9d9d57252304a921bd02e3fc"
 
 harmony:
   name: Comic Learning
@@ -19,13 +21,9 @@ harmony:
   google_analytics_key: #UA-xxxx-x
 
   # Profile links, leave blank to ignore
-  social: 
-    github: rolinawu
-    twitter: 
-    facebook: 
-    gplus: 
-    dribble: 
-    pinterest: 
+social:
+  github: ''
+  linkedin: ''
   # Toggle disclaimer in footer
   show_disclaimer: true
 
