@@ -61,11 +61,12 @@
 
 <h4 id="what-is-rnn">What is RNN?</h4>
 <p>If you are familiar with Neural Networks, then you can imagine RNN as a recurrsive Netural Networks. Recurrent Neural Network takes in the output of the past classifiers and a new input to make a prediction for the new input
-<!-- shared parameter to extract pattern over time --></p>
+<!-- shared parameter to extract pattern over time -->
+<!-- used mostly for language modeling, can learn powerful long term interactions--></p>
 
 <p>![alt text][RNNgraph]</p>
 
-<p>Even tho Recurrent is often referred as a Recursive Neural Network, it is more like a recursive hidden cell. The RNN cell applies a matrix, which is referred as the weights of the Neural Network, to every single inpus that it reads in. It performs a matrix multiplication to the input to produce the matrix of predictions.</p>
+<p>Even though Recurrent is often referred as a Recursive Neural Network, it is more like a recursive hidden cell. The RNN cell applies a matrix, which is referred as the weights of the Neural Network, to every single input that it reads in. It performs a matrix multiplication to the input to produce the matrix of predictions.</p>
 
 <p>![alt text][RNNsimplified]</p>
 
@@ -84,11 +85,10 @@
 <hr />
 
 <h4 id="what-is-lstm">What is LSTM?</h4>
-<p>LSTM is very similar to the vanilla RNN, the main difference between them is the hidden layers. LSTM has additional matrixes which are refered as “gates”. These matrices are responsible to eliminating instances that are not 
-Each LSTM cell is consist of input, a memory cell, and output.</p>
+<p>LSTM is very similar to the vanilla RNN, the main difference between them is the hidden layers. Both Vanilla RNN and LSTM have a cell for modifying the input and extracting required information. Vanilla RNN cell is the most basic form of RNN, as described above. LSTM cell is consist of three parts input, a memory cell, and output. The additional properties that LSTM memory cell holds is what distinguish it from vanilla RNNs’.</p>
 
 <h4 id="what-are-memory-cells">What are Memory cells?</h4>
-<p>A memroy cell has write, read, and forget gate. This is often referred as the three gates for LSTM. They are called gates because their functionality is the control the flow of the incomers(or input) and filter those that do not qualify.</p>
+<p>A memory cell has write, read, and forget gate. This is often referred as the three gates for LSTM. They are called gates because their functionality is the control the flow of the incomers(or input) and filter those that do not qualify.</p>
 
 <p>![alt text][LSTM Memory cell]</p>
 
@@ -104,7 +104,7 @@ Each LSTM cell is consist of input, a memory cell, and output.</p>
 
 <p>Vanishing gradient problem and Exponential gradient problem is a common issue for Feedforward Neural Networks. We can solve the exponential gradient problem by putting a cap on the gradient. However, the Vanishing Gradient Problem is slightly harder to solve. The three gates of LSTM help solves the vanishing gradient problem.</p>
 
-<p>Since multiplicative factor for each gate is a sigmoid function and sigmoid function is continuous everywhere, this means the function is differentiable. One of the benefits of having a differential multiplicaive factor means that we will be able to perform Back Propergation on the algorithm. Back Propergation will provide us a computationally inexpensive way to calculate the derivative of loss function, which will be necessary for tweaking the weights matrix.</p>
+<p>Since multiplicative factor for each gate is a sigmoid function and sigmoid function is continuous everywhere, this means the function is differentiable. One of the benefits of having a differential multiplicaive factor means that we will be able to perform Back Propergation on the algorithm. Back Propagation will provide us a computationally inexpensive way to calculate the derivative of loss function, which will be necessary for tweaking the weights matrix.</p>
 
 <p>LSTM also applies a Tanh function before senting its prediction to the output gate. The tanh function keeps output between -1 to 1 and transforms the output to reduce the effect of outlying values.</p>
 
@@ -114,7 +114,7 @@ Each LSTM cell is consist of input, a memory cell, and output.</p>
 
 <h4 id="what-are-the-applications-for-lstm">What are the applications for LSTM</h4>
 
-<p>LSTM is especially successful in many NLP tasks and analying time series data, or seuqencial data. The property of LSTM allows it to capture patterns with long-term dependencies better than vanilla RNNs. It is usually used for sentence generation, word sentiment understanding, or sentence sentiment analysis.</p>
+<p>LSTM is especially successful in many NLP tasks and analying time series data, or sequencial data. The property of LSTM allows it to capture patterns with long-term dependencies better than vanilla RNNs. It is usually used for sentence generation, word sentiment understanding, or sentence sentiment analysis.</p>
 
 <!-- Machine Learning Terms Cheat Sheet -->
 
@@ -156,13 +156,8 @@ Each LSTM cell is consist of input, a memory cell, and output.</p>
 
 <p>And thanks for XKCD for inspiring my idea on “comicfying” ML concepts</p>
 
-<!--![XKCD's comic/comment on Machine Learning][https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg]-->
-<link rel="stylesheet" href="/css/css.css" />
+<p><img src="xkcdonML" alt="XKCD's comic/comment on Machine Learning" /></p>
 
-<script src="/js/scripts.js"></script>
-
-<p><img src="https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg" />
-<a href="https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg">Link</a></p>
 
   				</p>
   				<p>

@@ -5,8 +5,8 @@
     <description>Comics + Machine Learning = Awesomeness</description>
     <link>http://127.0.0.1:4000/</link>
     <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 24 Sep 2016 01:54:54 -0400</pubDate>
-    <lastBuildDate>Sat, 24 Sep 2016 01:54:54 -0400</lastBuildDate>
+    <pubDate>Sat, 24 Sep 2016 16:41:18 -0400</pubDate>
+    <lastBuildDate>Sat, 24 Sep 2016 16:41:18 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -15,11 +15,12 @@
 
 &lt;h4 id=&quot;what-is-rnn&quot;&gt;What is RNN?&lt;/h4&gt;
 &lt;p&gt;If you are familiar with Neural Networks, then you can imagine RNN as a recurrsive Netural Networks. Recurrent Neural Network takes in the output of the past classifiers and a new input to make a prediction for the new input
-&lt;!-- shared parameter to extract pattern over time --&gt;&lt;/p&gt;
+&lt;!-- shared parameter to extract pattern over time --&gt;
+&lt;!-- used mostly for language modeling, can learn powerful long term interactions--&gt;&lt;/p&gt;
 
 &lt;p&gt;![alt text][RNNgraph]&lt;/p&gt;
 
-&lt;p&gt;Even tho Recurrent is often referred as a Recursive Neural Network, it is more like a recursive hidden cell. The RNN cell applies a matrix, which is referred as the weights of the Neural Network, to every single inpus that it reads in. It performs a matrix multiplication to the input to produce the matrix of predictions.&lt;/p&gt;
+&lt;p&gt;Even though Recurrent is often referred as a Recursive Neural Network, it is more like a recursive hidden cell. The RNN cell applies a matrix, which is referred as the weights of the Neural Network, to every single input that it reads in. It performs a matrix multiplication to the input to produce the matrix of predictions.&lt;/p&gt;
 
 &lt;p&gt;![alt text][RNNsimplified]&lt;/p&gt;
 
@@ -38,11 +39,10 @@
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;what-is-lstm&quot;&gt;What is LSTM?&lt;/h4&gt;
-&lt;p&gt;LSTM is very similar to the vanilla RNN, the main difference between them is the hidden layers. LSTM has additional matrixes which are refered as “gates”. These matrices are responsible to eliminating instances that are not 
-Each LSTM cell is consist of input, a memory cell, and output.&lt;/p&gt;
+&lt;p&gt;LSTM is very similar to the vanilla RNN, the main difference between them is the hidden layers. Both Vanilla RNN and LSTM have a cell for modifying the input and extracting required information. Vanilla RNN cell is the most basic form of RNN, as described above. LSTM cell is consist of three parts input, a memory cell, and output. The additional properties that LSTM memory cell holds is what distinguish it from vanilla RNNs’.&lt;/p&gt;
 
 &lt;h4 id=&quot;what-are-memory-cells&quot;&gt;What are Memory cells?&lt;/h4&gt;
-&lt;p&gt;A memroy cell has write, read, and forget gate. This is often referred as the three gates for LSTM. They are called gates because their functionality is the control the flow of the incomers(or input) and filter those that do not qualify.&lt;/p&gt;
+&lt;p&gt;A memory cell has write, read, and forget gate. This is often referred as the three gates for LSTM. They are called gates because their functionality is the control the flow of the incomers(or input) and filter those that do not qualify.&lt;/p&gt;
 
 &lt;p&gt;![alt text][LSTM Memory cell]&lt;/p&gt;
 
@@ -57,7 +57,7 @@ Each LSTM cell is consist of input, a memory cell, and output.&lt;/p&gt;
 
 &lt;p&gt;Vanishing gradient problem and Exponential gradient problem is a common issue for Feedforward Neural Networks. We can solve the exponential gradient problem by putting a cap on the gradient. However, the Vanishing Gradient Problem is slightly harder to solve. The three gates of LSTM help solves the vanishing gradient problem.&lt;/p&gt;
 
-&lt;p&gt;Since multiplicative factor for each gate is a sigmoid function and sigmoid function is continuous everywhere, this means the function is differentiable. One of the benefits of having a differential multiplicaive factor means that we will be able to perform Back Propergation on the algorithm. Back Propergation will provide us a computationally inexpensive way to calculate the derivative of loss function, which will be necessary for tweaking the weights matrix.&lt;/p&gt;
+&lt;p&gt;Since multiplicative factor for each gate is a sigmoid function and sigmoid function is continuous everywhere, this means the function is differentiable. One of the benefits of having a differential multiplicaive factor means that we will be able to perform Back Propergation on the algorithm. Back Propagation will provide us a computationally inexpensive way to calculate the derivative of loss function, which will be necessary for tweaking the weights matrix.&lt;/p&gt;
 
 &lt;p&gt;LSTM also applies a Tanh function before senting its prediction to the output gate. The tanh function keeps output between -1 to 1 and transforms the output to reduce the effect of outlying values.&lt;/p&gt;
 
@@ -67,7 +67,7 @@ Each LSTM cell is consist of input, a memory cell, and output.&lt;/p&gt;
 
 &lt;h4 id=&quot;what-are-the-applications-for-lstm&quot;&gt;What are the applications for LSTM&lt;/h4&gt;
 
-&lt;p&gt;LSTM is especially successful in many NLP tasks and analying time series data, or seuqencial data. The property of LSTM allows it to capture patterns with long-term dependencies better than vanilla RNNs. It is usually used for sentence generation, word sentiment understanding, or sentence sentiment analysis.&lt;/p&gt;
+&lt;p&gt;LSTM is especially successful in many NLP tasks and analying time series data, or sequencial data. The property of LSTM allows it to capture patterns with long-term dependencies better than vanilla RNNs. It is usually used for sentence generation, word sentiment understanding, or sentence sentiment analysis.&lt;/p&gt;
 
 &lt;!-- Machine Learning Terms Cheat Sheet --&gt;
 
@@ -95,13 +95,8 @@ Each LSTM cell is consist of input, a memory cell, and output.&lt;/p&gt;
 
 &lt;p&gt;And thanks for XKCD for inspiring my idea on “comicfying” ML concepts&lt;/p&gt;
 
-&lt;!--![XKCD's comic/comment on Machine Learning][https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg]--&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/css.css&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;xkcdonML&quot; alt=&quot;XKCD's comic/comment on Machine Learning&quot; /&gt;&lt;/p&gt;
 
-&lt;script src=&quot;/js/scripts.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg&quot; /&gt;
-&lt;a href=&quot;https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 05 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://127.0.0.1:4000/2016/09/05/WhatisComicLearning/</link>

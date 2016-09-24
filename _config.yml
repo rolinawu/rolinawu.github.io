@@ -1,5 +1,9 @@
+#baseurl:/rolinawu.github.io 
+
+#baseurl:"rolinawu.github.io"
+
 # Site live URL
-url: http://rolinawu.github.io
+url: http://rolinawu.github.io/blog
 
 # Localhost 
 #url: http://127.0.0.1:4000  

@@ -10,8 +10,6 @@ And thanks for XKCD for inspiring my idea on "comicfying" ML concepts
 
 
 
-<!--![XKCD's comic/comment on Machine Learning][https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg]-->
-<link rel="stylesheet" href="{{ site.baseurl }}/css/css.css">
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
-<img src="{{ site.baseurl }}https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg">
-<a href="{{ site.baseurl }}https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg">Link</a>
+![XKCD's comic/comment on Machine Learning][XKCD]
+
+[XKCD]: xkcdonML
