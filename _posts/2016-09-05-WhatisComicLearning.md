@@ -11,4 +11,7 @@ And thanks for XKCD for inspiring my idea on "comicfying" ML concepts
 
 
 <!--![XKCD's comic/comment on Machine Learning][https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg]-->
-<img src="https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg" alt="XKCD's comic/comment on Machine Learning">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/css.css">
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<img src="{{ site.baseurl }}https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg">
+<a href="{{ site.baseurl }}https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg">Link</a>
