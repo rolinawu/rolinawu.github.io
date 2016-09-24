@@ -1,8 +1,8 @@
 # Site live URL
-url: http://rolinawu.github.io
+#url: http://rolinawu.github.io
 
 # Localhost 
-#url: http://127.0.0.1:4000  
+url: http://127.0.0.1:4000  
 
 excerpt_separator: "d596aa409dbcf4bf9d9d57252304a921bd02e3fc"
 

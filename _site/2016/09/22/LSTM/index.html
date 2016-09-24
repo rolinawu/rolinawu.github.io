@@ -46,7 +46,7 @@ Each LSTM cell is consist of input, a memory cell, and output.</p>
 
 <p>Since multiplicative factor for each gate is a sigmoid function and sigmoid function is continuous everywhere, this means the function is differentiable. One of the benefits of having a differential multiplicaive factor means that we will be able to perform Back Propergation on the algorithm. Back Propergation will provide us a computationally inexpensive way to calculate the derivative of loss function, which will be necessary for tweaking the weights matrix.</p>
 
-<p>LSTM also applies a Tanh function before senting its prediction to the output gate. The tanh function keeps output between -1 to 1.</p>
+<p>LSTM also applies a Tanh function before senting its prediction to the output gate. The tanh function keeps output between -1 to 1 and transforms the output to reduce the effect of outlying values.</p>
 
 <!--Analogy: A amusement park-->
 

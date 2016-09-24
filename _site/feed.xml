@@ -5,8 +5,8 @@
     <description>Comics + Machine Learning = Awesomeness</description>
     <link>http://127.0.0.1:4000/</link>
     <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 22 Sep 2016 22:45:40 -0400</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2016 22:45:40 -0400</lastBuildDate>
+    <pubDate>Sat, 24 Sep 2016 00:39:08 -0400</pubDate>
+    <lastBuildDate>Sat, 24 Sep 2016 00:39:08 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -59,7 +59,7 @@ Each LSTM cell is consist of input, a memory cell, and output.&lt;/p&gt;
 
 &lt;p&gt;Since multiplicative factor for each gate is a sigmoid function and sigmoid function is continuous everywhere, this means the function is differentiable. One of the benefits of having a differential multiplicaive factor means that we will be able to perform Back Propergation on the algorithm. Back Propergation will provide us a computationally inexpensive way to calculate the derivative of loss function, which will be necessary for tweaking the weights matrix.&lt;/p&gt;
 
-&lt;p&gt;LSTM also applies a Tanh function before senting its prediction to the output gate. The tanh function keeps output between -1 to 1.&lt;/p&gt;
+&lt;p&gt;LSTM also applies a Tanh function before senting its prediction to the output gate. The tanh function keeps output between -1 to 1 and transforms the output to reduce the effect of outlying values.&lt;/p&gt;
 
 &lt;!--Analogy: A amusement park--&gt;
 
@@ -84,13 +84,23 @@ Each LSTM cell is consist of input, a memory cell, and output.&lt;/p&gt;
       </item>
     
       <item>
-        <title>Whatisrwcd</title>
-        <description>&lt;p&gt;Hello World&lt;/p&gt;
+        <title>Whatiscomiclearning</title>
+        <description>&lt;p&gt;What is Comic Learning?&lt;/p&gt;
 
+&lt;p&gt;My intention of this blog is to record all insteresting NLP techniques and Machine Learning algorithms. I am currently working on a NLP research project with a professor in my university. I wanted to share the exciting knowledge that I am learning and turn the abstract explainations for Machine Learning into comics or drawings that everyone will be able to understand. This blog is aimed for both people who are genuinely curious about the Machine Learning algorithms and those who are advanced in the field and looking for more perspectives.&lt;/p&gt;
+
+&lt;p&gt;I hope my comics will make you giggle and ponder occasionally. If you are new to Artificial Intelligence, I hope this blog will incite your passion in Machine Learning just like the how I was watching my first ML lecture.&lt;/p&gt;
+
+&lt;p&gt;Great thanks to Andrew Ng’s Cousera course and Google’s Deep Learning on Udacity which introduced me to the field.&lt;/p&gt;
+
+&lt;p&gt;And thanks for XKCD for inspiring my idea for “comicfying” ML concepts
+ ![XKCD’s comic/comment on Machine Learning][XKCDonML]&lt;/p&gt;
+
+&lt;p&gt;[XKCDonML][https://github.com/rolinawu/rolinawu.github.io/xkcdonML.png]&lt;/p&gt;
 </description>
         <pubDate>Mon, 05 Sep 2016 00:00:00 -0400</pubDate>
-        <link>http://127.0.0.1:4000/2016/09/05/WhatisRWCD/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000/2016/09/05/WhatisRWCD/</guid>
+        <link>http://127.0.0.1:4000/2016/09/05/WhatisComicLearning/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/2016/09/05/WhatisComicLearning/</guid>
         
         
       </item>
