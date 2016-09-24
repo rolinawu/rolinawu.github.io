@@ -7,8 +7,4 @@ I hope my comics will make you giggle and ponder occasionally. If you are new to
 Great thanks to Andrew Ng's Cousera course and Google's Deep Learning on Udacity which introduced me to the field. 
 
 And thanks for XKCD for inspiring my idea for "comicfying" ML concepts
- ![][XKCDonML]
-
-
-
-[XKCDonML]: http://xkcd.com/1425/ "XKCD's comic/comment on Machine Learning"
+ ![alt text](https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg "XKCD's comic/comment on Machine Learning")

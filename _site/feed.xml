@@ -5,8 +5,8 @@
     <description>Comics + Machine Learning = Awesomeness</description>
     <link>http://127.0.0.1:4000/</link>
     <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 24 Sep 2016 00:54:15 -0400</pubDate>
-    <lastBuildDate>Sat, 24 Sep 2016 00:54:15 -0400</lastBuildDate>
+    <pubDate>Sat, 24 Sep 2016 00:55:59 -0400</pubDate>
+    <lastBuildDate>Sat, 24 Sep 2016 00:55:59 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -94,8 +94,7 @@ Each LSTM cell is consist of input, a memory cell, and output.&lt;/p&gt;
 &lt;p&gt;Great thanks to Andrew Ng’s Cousera course and Google’s Deep Learning on Udacity which introduced me to the field.&lt;/p&gt;
 
 &lt;p&gt;And thanks for XKCD for inspiring my idea for “comicfying” ML concepts
- &lt;img src=&quot;http://xkcd.com/1425/&quot; alt=&quot;&quot; title=&quot;XKCD's comic/comment on Machine Learning&quot; /&gt;&lt;/p&gt;
-
+ &lt;img src=&quot;https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg&quot; alt=&quot;alt text&quot; title=&quot;XKCD's comic/comment on Machine Learning&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 05 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://127.0.0.1:4000/2016/09/05/WhatisComicLearning/</link>
