@@ -8,4 +8,6 @@ Great thanks to Andrew Ng's Cousera course and Google's Deep Learning on Udacity
 
 And thanks for XKCD for inspiring my idea on "comicfying" ML concepts
 
+
+
 ![XKCD's comic/comment on Machine Learning][https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.jpg]
