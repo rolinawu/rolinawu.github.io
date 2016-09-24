@@ -11,4 +11,4 @@ And thanks for XKCD for inspiring my idea for "comicfying" ML concepts
 
 
 
-[XKCDonML][https://github.com/rolinawu/rolinawu.github.io/xkcdonML.png]
+[XKCDonML][https://github.com/rolinawu/rolinawu.github.io/blob/master/_images/xkcdonML.png]
